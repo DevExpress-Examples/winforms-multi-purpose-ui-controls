@@ -1,0 +1,52 @@
+﻿body {
+	height: 100%;
+	display: flex;
+}
+
+.container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 32px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.editor {
+	margin: 4px;
+}
+
+.button {
+	margin: 4px;
+	min-height: 32px;
+	align-self: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+.wide {
+	flex-grow: 1;
+}
+
+.narrow {
+	width: 100px;
+}
+
+.stub {
+	margin: 4px;
+}

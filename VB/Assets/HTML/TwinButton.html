@@ -1,0 +1,18 @@
+﻿<!--templates-->
+<template id="twin-button-item-template">
+    <div class="content">
+        <img id="icon" class="icon" src="${Item.Icon}" hidden />
+        <span class="caption">${Item.Text}</span>
+    </div>
+</template>
+<!--templates-->
+<div class="twin-button">
+    <div class="first">
+        <twin-button-item id="firstButton" tabindex="0"></twin-button-item>
+        <div class="triangle left"></div>
+    </div>
+    <div class="second">
+        <div class="triangle right"></div>
+        <twin-button-item id="secondButton" tabindex="1"></twin-button-item>
+    </div>
+</div>

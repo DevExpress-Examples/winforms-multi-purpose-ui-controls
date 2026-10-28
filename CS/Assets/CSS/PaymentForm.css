@@ -1,0 +1,37 @@
+﻿.frame {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex-grow: 1;
+	width: 100%;
+}
+
+.card-top {
+	display: flex;
+	flex-direction: row;
+	width: 408px;
+	height: 64px;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-style: none;
+	border-color: rgba(0.0, 0.0, 0.0, 0.07);
+	border-radius: 10px 10px 0px 0px;
+	background-color: rgb(37, 88, 180);
+	box-shadow: 0px 6px 12px rgba(0.0, 0.0, 0.0, 0.15);
+	margin-left: 8px;
+}
+
+.title {
+	margin: 28px 0 42px 28px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.shadow-clip {
+	overflow: hidden;
+}

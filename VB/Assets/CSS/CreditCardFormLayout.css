@@ -1,0 +1,112 @@
+﻿body {
+	height: 100%;
+	display: flex;
+}
+
+.container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 16px 32px 32px 32px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.editor {
+	padding: 4px 0;
+}
+
+.button {
+	align-self: center;
+	min-width: 140px;
+}
+
+
+.card-container {
+	font-family: 'Courier New';
+	font-size: 14px;
+	padding: 32px 0;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.card {
+	width: 240px;
+	height: 120px;
+	border-radius: 8px;
+	padding: 40px 0 0 0;
+}
+
+.card-front {
+	background-color: @Blue;
+	color: white;
+}
+
+.card-back {
+	margin: 0 0 -180px 72px;
+	background-color: @Blue/0.8;
+	color: @White;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#card-stripe {
+	width: 100%;
+	height: 32px;
+	background-color: @ControlText;
+}
+
+#card-cvc {
+	margin: 8px 8px 0 0;
+	margin-right: 8px;
+	padding: 4px 12px;
+	background-color: @Window;
+	color: @WindowText;
+	text-align: right;
+}
+
+#card-cvc-label {
+	margin: 2px 8px 0 0;
+	font-size: 10px;
+}
+
+.card-content {
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bank-name {
+	margin-top: -32px;
+	align-self: flex-end;
+}
+
+.card-number {
+	padding: 40px 0 16px 0;
+	margin: 0 -8px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.card-holder {
+	align-self: flex-start;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.exp-date {
+	align-self: flex-start;
+}

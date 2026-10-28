@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>UITemplatesExampleVB</AssemblyName>
+    <StartupObject>Program</StartupObject>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>On</OptionStrict>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.Design" Version="26.2.*-*" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\logo.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\**\*.*" Exclude="Assets\**\*.vb">
+      <LogicalName>$(AssemblyName).Assets.$([System.String]::Copy('%(RecursiveDir)').Replace('\','.'))%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Compile Remove="Components\ProgressIndicator.vb" />
+    <Compile Remove="Forms\AddressForm.Designer.vb" />
+    <Compile Remove="Forms\AddressForm.vb" />
+    <Compile Remove="Forms\CreditCardForm.Designer.vb" />
+    <Compile Remove="Forms\CreditCardForm.vb" />
+    <Compile Remove="Forms\LoginForm.Designer.vb" />
+    <Compile Remove="Forms\LoginForm.vb" />
+    <Compile Remove="Forms\PasswordForm.Designer.vb" />
+    <Compile Remove="Forms\PasswordForm.vb" />
+    <Compile Remove="Forms\PasswordRecoveryForm.Designer.vb" />
+    <Compile Remove="Forms\PasswordRecoveryForm.vb" />
+    <Compile Remove="Forms\PaymentForm.Designer.vb" />
+    <Compile Remove="Forms\PaymentForm.vb" />
+    <Compile Remove="Images\PersonPrefixes.vb" />
+    <Compile Remove="Images\Users.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Forms\AddressForm.resx" />
+    <EmbeddedResource Remove="Forms\CreditCardForm.resx" />
+    <EmbeddedResource Remove="Forms\LoginForm.resx" />
+    <EmbeddedResource Remove="Forms\PasswordForm.resx" />
+    <EmbeddedResource Remove="Forms\PasswordRecoveryForm.resx" />
+    <EmbeddedResource Remove="Forms\PaymentForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PersonPrefixes.vb" />
+    <None Include="Images\Users.vb" />
+    <None Include="Messages\ReloadRequired.vb" />
+    <None Include="Models\Address.vb" />
+    <None Include="Models\Contact.vb" />
+    <None Include="Models\ContactSampleData.vb" />
+    <None Include="Models\Employee.vb" />
+    <None Include="Models\EmployeeSampleData.vb" />
+    <None Include="Models\EmployeeSampleRepositories.vb" />
+    <None Include="Models\Entity.vb" />
+    <None Include="Repositories\InMemoryRepository.vb" />
+    <None Include="Repositories\IReadOnlyRepository.vb" />
+    <None Include="Repositories\IRepository.vb" />
+    <None Include="UserControls\ContactList.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\ContactList.Designer.vb" />
+    <None Include="UserControls\ContactsSimple.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\ContactsSimple.Designer.vb" />
+    <None Include="UserControls\EmployeeDetails.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\EmployeeDetails.Designer.vb" />
+    <None Include="UserControls\EmployeeDetailsSimple.vb" />
+    <None Include="UserControls\EmployeeDetailsSimple.Designer.vb" />
+    <None Include="UserControls\EmployeesHierarchy.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\EmployeesHierarchy.Designer.vb" />
+    <None Include="UserControls\EmployeesHierarchySimple.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\EmployeesHierarchySimple.Designer.vb" />
+    <None Include="UserControls\EmployeesMasterDetail.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\EmployeesMasterDetail.Designer.vb" />
+    <None Include="UserControls\EmployeesMasterDetailSimple.vb">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="UserControls\EmployeesMasterDetailSimple.Designer.vb" />
+    <None Include="ViewModels\EntitiesViewModel.vb" />
+    <None Include="ViewModels\EntityViewModel.vb" />
+    <None Include="ViewModels\ReadOnlyEntitiesViewModel.vb" />
+    <None Include="ViewModels\ReadOnlyEntityViewModel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Components\ProgressIndicator.vb" />
+    <None Include="Forms\AddressForm.Designer.vb" />
+    <None Include="Forms\AddressForm.vb" />
+    <None Include="Forms\CreditCardForm.Designer.vb" />
+    <None Include="Forms\CreditCardForm.vb" />
+    <None Include="Forms\LoginForm.Designer.vb" />
+    <None Include="Forms\LoginForm.vb" />
+    <None Include="Forms\PasswordForm.Designer.vb" />
+    <None Include="Forms\PasswordForm.vb" />
+    <None Include="Forms\PasswordRecoveryForm.Designer.vb" />
+    <None Include="Forms\PasswordRecoveryForm.vb" />
+    <None Include="Forms\PaymentForm.Designer.vb" />
+    <None Include="Forms\PaymentForm.vb" />
+  </ItemGroup>-->
+</Project>

@@ -1,0 +1,49 @@
+﻿.toggle-button-group {
+	display: flex;
+}
+
+.toggle-button-group-item {
+	display: inline-block;
+	border: 1px solid @ControlBorder;
+	color: @ControlText;
+	background-color: @Control;
+}
+
+	.toggle-button-group-item:hover {
+		background-color: @Highlight/0.5;
+	}
+
+	.toggle-button-group-item:active {
+		background-color: @Highlight/0.75;
+	}
+
+	.toggle-button-group-item:--selected {
+		background-color: @Highlight;
+	}
+
+.first {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.middle {
+	border-left-width: 0;
+}
+
+.last {
+	border-radius: 0px 4px 4px 0px;
+	border-left-width: 0;
+}
+
+.small {
+	font-size: 0.8em;
+	padding: 2px 8px;
+}
+
+.default {
+	padding: 4px 12px;
+}
+
+.large {
+	font-size: 1.2em;
+	padding: 6px 16px;
+}
