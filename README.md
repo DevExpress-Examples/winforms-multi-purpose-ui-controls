@@ -7,7 +7,7 @@
 
 # WinForms Special-purpose UI Controls
 
-This example shows DevExpress WinForms special-purpose UI controls in action. These controls are predesigned and ready-to-use UI components. You can seamlessly integrate them into existing projects.
+This example combines DevExpress WinForms special-purpose UI controls, ready-to-use forms, and pre-designed user controls into a working application. You can integrate these controls and forms into existing projects with minimal effort.
 
 Run the application and select a control in the navigation menu on the left (use the search box to find a control by name). Editors, buttons, and user controls open in tabs, and forms open in separate windows. Use the **Appearance** Ribbon page to change the skin palette and accent colors and see how the controls adapt to the active theme.
 
