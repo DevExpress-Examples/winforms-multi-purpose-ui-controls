@@ -5,11 +5,11 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
-# WinForms Special-purpose UI Controls
+# WinForms Multi-purpose UI Controls
 
-This example combines DevExpress WinForms special-purpose UI controls, ready-to-use forms, and pre-designed user controls into a working application. You can integrate these controls and forms into existing projects with minimal effort.
+This example combines DevExpress WinForms multi-purpose UI controls, ready-to-use forms, and pre-designed user controls into a single application. You can use included modules as a starting point for your next great DevExpress-powered app or extend existing projects with minimal effort.
 
-Run the application and select a control in the navigation menu on the left (use the search box to find a control by name). Editors, buttons, and user controls open in tabs, and forms open in separate windows. Use the **Appearance** Ribbon page to change the skin palette and accent colors and see how the controls adapt to the active theme.
+Run the application and select a control in the left navigation menu (use the search box to locate a control by name). Editors, buttons, and user controls open in tabs, while forms open in separate windows. Use the **Appearance** Ribbon page to change the skin palette/accent colors and adapt controls to the active theme.
 
 All controls support the following features:
 
@@ -18,11 +18,11 @@ All controls support the following features:
 * [High DPI & DirectX Hardware Acceleration](https://docs.devexpress.com/WindowsForms/116666/common-features/high-dpi-support)
 * [WinForms MVVM](https://docs.devexpress.com/WindowsForms/113955/cross-platform-app-development/winforms-mvvm)
 
-![](media/winforms-ui-templates-overview.png)
+![](media\winforms-multi-purpose-ui-controls-overview.png)
 
 ## Files to Review
 
-Special-purpose UI controls are located in `Editors`, `Forms`, and `UserControls` folders. Base classes are in the `Editors/Base` and `Forms/Base` subfolders. The `Views` folder contains demo pages for the editors.
+Special-purpose UI controls are located in `Editors`, `Forms`, and `UserControls` folders. You can find base classes in `Editors/Base` and `Forms/Base` subfolders. The `Views` folder contains demo pages for the editors.
 
 ### Editors
 
